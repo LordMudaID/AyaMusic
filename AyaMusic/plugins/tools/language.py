@@ -15,10 +15,10 @@ from AyaMusic.utils.decorators import (ActualAdminCB, language,
 def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
-        InlineKeyboardButton(text="𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚", callback_data=f"languages:toxic"),
+        InlineKeyboardButton(text="𝐈𝐧𝐝𝐨𝐧𝐞𝐬𝐢𝐚", callback_data=f"languages:id"),
     )
     keyboard.row(
-        InlineKeyboardButton(text="𝐓𝐨𝐱𝐢𝐜", callback_data=f"languages:id"),
+        InlineKeyboardButton(text="𝐓𝐨𝐱𝐢𝐜", callback_data=f"languages:toxic"),
     )
     keyboard.row(
         InlineKeyboardButton(text=_["BACK_BUTTON"], callback_data=f"settingsback_helper"),
