@@ -35,10 +35,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭", url="t.me/Riizzvbss"),
-            InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                    ),
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭",
+            url="t.me/Riizzvbss"),
+            InlineKeyboardButton(text=_["S_B_3"],
+            url=f"{SUPPORT_GROUP}"),
         ],
         [
             InlineKeyboardButton(
@@ -71,10 +71,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭", url="t.me/Riizzvbss"),
-            InlineKeyboardButton(
-                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
-                    ),
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭",
+            url="t.me/Riizzvbss"),
+            InlineKeyboardButton(text=_["S_B_3"],
+            url=f"{SUPPORT_GROUP}"),
         ],
         [
             InlineKeyboardButton(
