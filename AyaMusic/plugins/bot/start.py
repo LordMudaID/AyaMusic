@@ -221,6 +221,7 @@ async def testbot(client, message: Message, _):
         _["start_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
         ),
+        )
 
 
 welcome_group = 2
