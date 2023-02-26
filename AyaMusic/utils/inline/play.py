@@ -35,7 +35,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ", url="t.me/Riizzvbss"),
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭", url="t.me/Riizzvbss"),
             InlineKeyboardButton(
                         text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
                     ),
@@ -69,6 +69,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+        ],
+        [
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭", url="t.me/Riizzvbss"),
+            InlineKeyboardButton(
+                        text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                    ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -82,11 +90,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
 
 def stream_markup(_, videoid, chat_id):
     buttons = [
+         [
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭",
+            url="t.me/Riizzvbss"),
+            InlineKeyboardButton(text=_["S_B_3"],
+            url=f"{SUPPORT_GROUP}"),
+        ],
         [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
@@ -103,14 +113,22 @@ def stream_markup(_, videoid, chat_id):
 
 def telegram_markup(_, chat_id):
     buttons = [
+         [
+            InlineKeyboardButton(text="𝐉𝐚𝐬𝐚 𝐁𝐨𝐭",
+            url="t.me/Riizzvbss"),
+            InlineKeyboardButton(text=_["S_B_3"],
+            url=f"{SUPPORT_GROUP}"),
+        ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            ),
+            )
         ],
     ]
     return buttons
