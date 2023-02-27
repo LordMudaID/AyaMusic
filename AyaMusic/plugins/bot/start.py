@@ -210,9 +210,10 @@ async def start_comm(client, message: Message, _):
     & ~BANNED_USERS
 )
 @LanguageStart
-async def testbot(client, message: Message, _):
-  welcome_group = 2
+async def testbot(client, message: Message, _)
 
+
+welcome_group = 2
 
 @app.on_message(filters.new_chat_members, group=welcome_group)
 async def welcome(client, message: Message):
