@@ -19,7 +19,7 @@ LEAVE_TIME = config.AUTO_SUGGESTION_TIME
 strings = []
 suggestor = {}
 
-for item in get_string("toxic"):
+for item in get_string("id"):
     if item[0:3] == "sug" and item != "sug_0":
         strings.append(item)
 
@@ -42,7 +42,6 @@ async def dont_do_this():
                 random.shuffle(chats)
                 for x in chats:
                     if send_to == total:
-                    if send_to == total:
                         break
                     if x == config.LOG_GROUP_ID:
                         continue
@@ -52,7 +51,7 @@ async def dont_do_this():
                         language = await get_lang(x)
                         _ = get_string(language)
                     except:
-                        _ = get_string("toxic")
+                        _ = get_string("id")
                     string = random.choice(strings)
                     previous = suggestor.get(x)
                     if previous:
@@ -60,7 +59,7 @@ async def dont_do_this():
                             string = random.choice(strings)
                     suggestor[x] = string.split("_")[1]
                     try:
-                        msg = _["sug_0"] + _[string]
+                        msg = _["sug_0"].format(string)
                         sent = await app.send_message(x, msg)
                         if x not in clean:
                             clean[x] = []
@@ -78,6 +77,7 @@ async def dont_do_this():
                         pass
             except:
                 pass
+
 
 
 asyncio.create_task(dont_do_this())
