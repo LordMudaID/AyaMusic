@@ -53,7 +53,7 @@ async def activecilik(_, message: Message):
     ms = len(await get_active_chats())
     vd = len(await get_active_video_chats())
     await app.send_message(message.chat.id, 
-        f"📀 Active Chats:**\n\n• **Music: {ms}`\n•Video:{vd}`")
+        f"📀 **Active Chats**\n\n๏» **Music**: `{ms}`\n๏» **Video**:`{vd}`")
 
 @app.on_message(filters.command(ACTIVEVIDEO_COMMAND) & SUDOERS)
 async def activevi_(_, message: Message):
