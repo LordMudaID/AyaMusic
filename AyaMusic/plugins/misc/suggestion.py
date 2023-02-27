@@ -19,7 +19,7 @@ LEAVE_TIME = config.AUTO_SUGGESTION_TIME
 strings = []
 suggestor = {}
 
-for item in get_string("id"):
+for item in get_string("toxic"):
     if item[0:3] == "sug" and item != "sug_0":
         strings.append(item)
 
@@ -51,7 +51,7 @@ async def dont_do_this():
                         language = await get_lang(x)
                         _ = get_string(language)
                     except:
-                        _ = get_string("id")
+                        _ = get_string("toxic")
                     string = random.choice(strings)
                     previous = suggestor.get(x)
                     if previous:
