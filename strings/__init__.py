@@ -35,7 +35,7 @@ for filename in os.listdir(r"./strings"):
 for filename in os.listdir(r"./strings/langs/"):
     if "toxic" not in languages:
         languages["toxic"] = yaml.safe_load(
-            open(r"./strings/langs/id.yml", encoding="utf8")
+            open(r"./strings/langs/toxic.yml", encoding="utf8")
         )
     if filename.endswith(".yml"):
         language_name = filename[:-4]
