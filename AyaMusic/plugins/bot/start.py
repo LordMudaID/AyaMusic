@@ -210,7 +210,8 @@ async def start_comm(client, message: Message, _):
     & ~BANNED_USERS
 )
 @LanguageStart
-async def testbot(client, message: Message, _)
+async def testbot(client, message: Message, _):
+  await add_served_user(message.from_user.id)
 
 
 welcome_group = 2
